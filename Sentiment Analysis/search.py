@@ -51,7 +51,7 @@ class SearchAPI:
 
         # Iterating through data
         for i in range(0, 1):
-            # wait time after everyy 100 frames added
+            # wait time after every 100 frames added
             # time.sleep(1)
             print("Wait")
             for status in tweepy.Cursor(api.search, q=search_words, lang="en", tweet_mode="extended").items(510):
